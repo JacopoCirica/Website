@@ -1,0 +1,167 @@
+
+*{
+    box-sizing: border-box;}
+
+
+html, body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto; 
+    background-color: rgba(31,31,31,255);
+    padding: 0;
+    height: 100%;}
+
+.navbar {
+    display: flex;
+    background-color: rgba(31,31,31,255);
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;}
+
+#Search {
+    position: relative;
+    left: 80vh;}
+
+ .navbar .search-container {
+    margin-left: auto;
+}
+.navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+      }
+
+.navbar .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: rgba(31,31,31,255);
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;}
+.navbar .search-container button:hover {
+    background: #ccc;
+    color: black;}
+  
+header {
+position:relative;
+height: 70%;
+background:#fff url(sfondohomepage.jpeg) no-repeat center center; /* © [pinkeyes] /Adobe Stock. The licence has been bought and credit is given to the author of the image */
+background-size:cover;
+box-shadow:inset 0 -1px 5px rgba(0,0,0,0.6);}
+
+#testo-header {
+position: absolute;
+top: 150px;
+left: 900px;}
+
+/* text effect */
+
+h1, h2{
+    font-size: 40px;
+    text-transform: uppercase;}
+.title > span{
+        width: 100%;
+        float:right;
+        color: white;
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+        transform: translateY(-50px);
+        opacity: 0;
+        animation-name: titleAnimation;
+        animation-timing-function: ease-out;
+        animation-duration: 6s;}
+
+        h1 span{
+            animation-delay: 0.6s;
+            animation-fill-mode: forwards;}
+            span:first-child{
+              animation-delay: 0.7s;}
+            span:last-child{
+              color:orangered;
+              animation-delay: 1s;}
+        h2 span:last-child {
+            color: rgba(151,179,229,255);
+            animation-delay: 0.5s;}
+        
+              @keyframes titleAnimation {
+                0% {
+                  transform: translateY(-50px);
+                  opacity: 0;
+                  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+                  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);}
+              20% {
+                  transform: translateY(0);
+                  opacity: 1;
+                  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+                  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);}
+              80% {
+                   transform: translateY(0);
+                   opacity: 1;
+                  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+                  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);}
+              100% {
+                   transform: translateY(50px);
+                   opacity: 0;
+                  -webkit-clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+                  clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);}
+            }
+          
+
+/* text section */
+#testo
+{position: relative;
+width: 70%;
+margin: -35px auto 0;
+padding: 40px;
+background: rgba(227,227,227,255);
+box-shadow: 0 0 15px #000;}
+
+/*contact section */
+.container {
+    padding: 40px;
+    color: rgba(227,227,227,255);
+    width: 70%;
+    position: relative;
+    margin: 70px auto 0;}
+.padding {
+    padding-top:32px!important;
+    padding-bottom:32px!important}
+
+.input {
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%}
+.section {
+    margin-top:16px!important;
+    margin-bottom:16px!important}
+
+.border {
+    border:1px solid #ccc!important}
+.button {
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap}
+.black {
+    color:#fff!important;
+    background-color:#000!important}
+
